@@ -14,6 +14,12 @@ An Xcode Source Editor Extension to integrate ChatGPT in Xcode and let the AI as
 8. Go to System Preferences => Extensions => Xcode Source Editor and check that the extension is enabled.
 9. Run Xcode and select a source file or any file that opens within the source editor. The extension's commands should be available at the end of the Editor menu, under the menu item "AIAssistant".
 
+Important: before trying the extension you must obtain an OpenAI apikey (https://platform.openai.com/account/api-keys), then create a file named openai.apikey XCLovesAI_Extension folder and paste the apikey inside.
+ 
+## Code Use Disclosure
+
+By using this extension, you agree that any code you input will be sent to the OpenAI's ChatGPT APIs. Do not submit code that contains sensitive intellectual property or sensitive data (api keys, passwords, etc...). The responsibility of ensuring this rests with you. Misuse of this tool is solely the user's liability.
+
 ## Available Commands
 
 ### Comment selection
