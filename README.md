@@ -36,7 +36,7 @@ In the following example I'm generating the documentation for a sample class tak
 Paste the json code in the source editor, select it and launch this command to generate a swift codable for the selected JSON.
 
 In the following example I'm using the Generate Codable from JSON on the selected JSON to let ChatGPT generate Swift Codable models from the JSON:
-![](example_gifs/json-to-codable-example.gif)
+![](/example_gifs/json-to-codable-example.gif)
 
 
 ### Instructions2Code
@@ -45,11 +45,11 @@ This commands will let the AI to generate code based on your comments. Open a ne
 
 In the example below I add a comment above a function which make an api call and return the result using completions, and instruct ChatGPT to rewrite this function using async/await instead:
 
-![](https://github.com/marcosiino/xcode-loves-ai/blob/feature/readme_gif_examples/example_gifs/rewrite-using-async-await.gif)
+![](/example_gifs/rewrite-using-async-await.gif)
 
 In the following example I ask to generate the code documentation for the selected class:
 
-![](https://github.com/marcosiino/xcode-loves-ai/blob/feature/readme_gif_examples/example_gifs/instruct2code-generating-documentation.gif
+![](/example_gifs/instruct2code-generating-documentation.gif
 )
 
 ## Contribute
