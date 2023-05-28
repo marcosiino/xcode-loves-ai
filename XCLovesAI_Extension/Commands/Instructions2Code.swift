@@ -32,21 +32,7 @@ class Instructions2Code: NSObject, XCSourceEditorCommand, CodeEditorCommand, AIA
             do {
                 //Make the ChatGPT request
                 if var generatedAnswer = try await sendRequestToAI() {
-                    //Removes the markup code from the generated answer
-                    generatedAnswer = generatedAnswer.replacingOccurrences(of: "```", with: "")
-                    
-                    for _ in (selectedBlock.startLine...selectedBlock.endLine) {
-                        print("Removing line at: \(selectedBlock.startLine)")
-                        invocation.buffer.lines.removeObject(at: selectedBlock.startLine)
-                    }
-                    
-                    var insertAt = selectedBlock.startLine
-                    for generatedLine in generatedAnswer.split(separator: "\n") {
-                        //Add each generated line at the position where the user selections started, and adds the original indentation in the first line of the user selection so that the generated answer starting at the same indentation level of the code in the user selection
-                        let indentedLine = selectedBlock.indentation + generatedLine
-                        invocation.buffer.lines.insert(indentedLine, at: insertAt)
-                        insertAt += 1
-                    }
+                    replaceSelectedTextBlock(selectedBlock, with: generatedAnswer, inInvocation: invocation)
                 }
                 
                 completionHandler(nil)

@@ -13,7 +13,7 @@
 		A91060222A1FEBF90045B41F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91060212A1FEBF90045B41F /* Preview Assets.xcassets */; };
 		A91060302A1FEC1D0045B41F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A910602F2A1FEC1D0045B41F /* Cocoa.framework */; };
 		A91060352A1FEC1D0045B41F /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91060342A1FEC1D0045B41F /* SourceEditorExtension.swift */; };
-		A91060372A1FEC1D0045B41F /* CommentAboveSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91060362A1FEC1D0045B41F /* CommentAboveSelection.swift */; };
+		A91060372A1FEC1D0045B41F /* CodeDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91060362A1FEC1D0045B41F /* CodeDocumentation.swift */; };
 		A910603C2A1FEC1D0045B41F /* AIAssistant.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A910602D2A1FEC1D0045B41F /* AIAssistant.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A91060442A1FECE10045B41F /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91060312A1FEC1D0045B41F /* XcodeKit.framework */; };
 		A91060452A1FECE10045B41F /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A91060312A1FEC1D0045B41F /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -77,7 +77,7 @@
 		A910602F2A1FEC1D0045B41F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A91060312A1FEC1D0045B41F /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		A91060342A1FEC1D0045B41F /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
-		A91060362A1FEC1D0045B41F /* CommentAboveSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentAboveSelection.swift; sourceTree = "<group>"; };
+		A91060362A1FEC1D0045B41F /* CodeDocumentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDocumentation.swift; sourceTree = "<group>"; };
 		A91060382A1FEC1D0045B41F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A91060392A1FEC1D0045B41F /* XCLovesAI_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCLovesAI_Extension.entitlements; sourceTree = "<group>"; };
 		A910604A2A1FF0DA0045B41F /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 		A93CCD382A2013BB0041C5D2 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
-				A91060362A1FEC1D0045B41F /* CommentAboveSelection.swift */,
+				A91060362A1FEC1D0045B41F /* CodeDocumentation.swift */,
 				A93CCD3B2A201DDC0041C5D2 /* JSONToCodable.swift */,
 				A93CCD3D2A2024990041C5D2 /* Instructions2Code.swift */,
 			);
@@ -352,7 +352,7 @@
 				A91060572A1FF10B0045B41F /* MessageModel.swift in Sources */,
 				A93CCD372A20109C0041C5D2 /* CodeEditorCommand.swift in Sources */,
 				A910604D2A1FF0DA0045B41F /* Request.swift in Sources */,
-				A91060372A1FEC1D0045B41F /* CommentAboveSelection.swift in Sources */,
+				A91060372A1FEC1D0045B41F /* CodeDocumentation.swift in Sources */,
 				A910605A2A1FF10B0045B41F /* ChatRequest.swift in Sources */,
 				A91060582A1FF10B0045B41F /* RequestModel.swift in Sources */,
 				A93CCD3E2A2024990041C5D2 /* Instructions2Code.swift in Sources */,

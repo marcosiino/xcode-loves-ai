@@ -1,15 +1,14 @@
 //
-//  JSONToCodable.swift
+//  CodeDocumentation.swift
 //  XCLovesAI_Extension
 //
-//  Created by Marco on 26/05/23.
-//  Copyright © 2023 Marco Siino. All rights reserved.
+//  Created by Marco Siino on 25/05/23.
 //
 
 import Foundation
 import XcodeKit
 
-class JSONToCodable: NSObject, XCSourceEditorCommand, CodeEditorCommand, AIAssistedCommand {
+class CodeDocumentation: NSObject, XCSourceEditorCommand, CodeEditorCommand, AIAssistedCommand {
     var messages: [MessageModel] = []
     var client = ChatGPTClient(apiKey: SourceEditorExtension.apiKey)
     
@@ -20,11 +19,15 @@ class JSONToCodable: NSObject, XCSourceEditorCommand, CodeEditorCommand, AIAssis
             return
         }
         
-        addAIInstructions(systemInstructions: "You are a code assistant for Xcode. Write a swift codable model from the json code. Answer only with the raw codable model code, without any markup and without any other text or written instructions.")
+        //Set instructions for the task ChatGPT should perform with our code
+        addAIInstructions(systemInstructions: "You are a code assistant for Xcode. Generate code documentation for the given code. Only output the given code modified to add the documentation. Don't output any conversational text.")
+        
+        //Add a message with our code
         addAIMessageWithCode(code: selectedBlock.selectedText)
         
         Task {
             do {
+                //Send the request to ChatGPT
                 if let generatedAnswer = try await sendRequestToAI() {
                     replaceSelectedTextBlock(selectedBlock, with: generatedAnswer, inInvocation: invocation)
                 }
