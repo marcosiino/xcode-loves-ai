@@ -28,7 +28,7 @@ This command generates the code documentation for the selected code.
 
 In the following example I'm generating the documentation for a sample class taken from a public github repo:
 
-![](https://github.com/marcosiino/xcode-loves-ai/blob/feature/readme_gif_examples/example_gifs/generate-doc.gif)
+![](/example_gifs/generate-doc.gif)
 
 
 ### Generate Codable from JSON
@@ -36,8 +36,7 @@ In the following example I'm generating the documentation for a sample class tak
 Paste the json code in the source editor, select it and launch this command to generate a swift codable for the selected JSON.
 
 In the following example I'm using the Generate Codable from JSON on the selected JSON to let ChatGPT generate Swift Codable models from the JSON:
-![](https://github.com/marcosiino/xcode-loves-ai/blob/feature/readme_gif_examples/example_gifs/json-to-codable-example.gif
-)
+![](example_gifs/json-to-codable-example.gif)
 
 
 ### Instructions2Code
