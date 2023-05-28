@@ -34,6 +34,8 @@ Paste the json code in the source editor, select it and launch this command to g
 
 This commands will let the AI to generate code based on your comments. Open a new source file, type in comments to describe the behaviour of the code you want to be generated, select it then launch the command. After the code is generated you can add more comments to improve the code or add more code by selecting all the code including the comments, then relaunching the command.
 
+In the example below I add a comment above a function which make an api call and return the result using completions, and instruct ChatGPT to rewrite this function using async/await instead:
+
 ![](https://github.com/marcosiino/xcode-loves-ai/blob/feature/readme_gif_examples/example_gifs/rewrite-using-async-await.gif)
 
 ## Contribute
