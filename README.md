@@ -26,6 +26,11 @@ By using this extension, you agree that any code you input will be sent to the O
 
 This command generates the code documentation for the selected code.
 
+In the following example I'm generating the documentation for a sample class taken from a public github repo:
+
+![](https://github.com/marcosiino/xcode-loves-ai/blob/feature/readme_gif_examples/example_gifs/generate-doc.gif)
+
+
 ### Generate Codable from JSON
 
 Paste the json code in the source editor, select it and launch this command to generate a swift codable for the selected JSON.
