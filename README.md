@@ -30,6 +30,11 @@ This command generates a comment for the selected portion of code and add it abo
 
 Paste the json code in the source editor, select it and launch this command to generate a swift codable for the selected JSON.
 
+In the following example I'm using the Generate Codable from JSON on the selected JSON to let ChatGPT generate Swift Codable models from the JSON:
+![](https://github.com/marcosiino/xcode-loves-ai/blob/feature/readme_gif_examples/example_gifs/json-to-codable-example.gif
+)
+
+
 ### Instructions2Code
 
 This commands will let the AI to generate code based on your comments. Open a new source file, type in comments to describe the behaviour of the code you want to be generated, select it then launch the command. After the code is generated you can add more comments to improve the code or add more code by selecting all the code including the comments, then relaunching the command.
