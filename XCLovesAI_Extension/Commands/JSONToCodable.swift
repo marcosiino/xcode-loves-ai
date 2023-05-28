@@ -15,13 +15,13 @@ class JSONToCodable: NSObject, XCSourceEditorCommand, CodeEditorCommand, AIAssis
     
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
         
-        guard let (selectedText, _, _, _) = selectedTextBlock(from: invocation) else {
+        guard let selectedBlock = selectedTextBlock(from: invocation) else {
             completionHandler(nil)
             return
         }
         
         addAIInstructions(systemInstructions: "You are a code assistant for Xcode. Write a swift codable model from the json code. Answer only with the raw codable model code, without any markup and without any other text or written instructions.")
-        addAIMessageWithCode(code: selectedText)
+        addAIMessageWithCode(code: selectedBlock.selectedText)
         
         Task {
             do {

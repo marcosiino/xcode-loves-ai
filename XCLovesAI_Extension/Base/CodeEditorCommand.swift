@@ -24,7 +24,14 @@ extension CodeEditorCommand {
         }
         
         let startLine = selection.start.line
-        let endLine = selection.end.line
+        var endLine = selection.end.line
+        
+        //For some reason, if you make a selection from some point until the last line in xcode, the invocation returns an invalid endLine (equal to the count of the total lines, instead of a 0-based one)... in this case i fix it by subtracting 1 to endLine
+        if endLine == invocation.buffer.lines.count {
+            endLine = endLine - 1
+        }
+        
+        print("Start Line: \(startLine), end line: \(endLine), total lines count: \(invocation.buffer.lines.count)")
         
         //Extracts the selected lines of the from the entire source code
         var selectedTextBlock = ""
