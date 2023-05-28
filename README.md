@@ -34,7 +34,7 @@ Paste the json code in the source editor, select it and launch this command to g
 
 This commands will let the AI to generate code based on your comments. Open a new source file, type in comments to describe the behaviour of the code you want to be generated, select it then launch the command. After the code is generated you can add more comments to improve the code or add more code by selecting all the code including the comments, then relaunching the command.
 
-This command need to be improved. If the generated code replaces the previous one, try to refine the comments saying that you want the full code.
+![](https://github.com/marcosiino/xcode-loves-ai/blob/feature/readme_gif_examples/example_gifs/rewrite-using-async-await.gif)
 
 ## Contribute
 
