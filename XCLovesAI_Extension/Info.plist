@@ -10,11 +10,11 @@
 			<array>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).CommentAboveSelection</string>
+					<string>$(PRODUCT_MODULE_NAME).CodeDocumentation</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>$(PRODUCT_BUNDLE_IDENTIFIER).CommentAboveSelection</string>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).CodeDocumentation</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>Comment selection</string>
+					<string>Generate Code Documentation for Selection</string>
 				</dict>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>

@@ -14,6 +14,9 @@ protocol CodeEditorCommand {
     
     /// Returns the selected text and its indentation
     func selectedTextBlock(from invocation: XCSourceEditorCommandInvocation) -> SelectedTextBlock?
+    
+    /// Replace the selected text with the given generatedAnswer
+    func replaceSelectedTextBlock(_ textBlock:SelectedTextBlock, with generatedAnswer: any StringProtocol, inInvocation invocation: XCSourceEditorCommandInvocation)
 }
 
 extension CodeEditorCommand {
@@ -48,5 +51,22 @@ extension CodeEditorCommand {
         }
         
         return (selectedTextBlock, indentation, startLine, endLine)
+    }
+    
+    func replaceSelectedTextBlock(_ textBlock:SelectedTextBlock, with generatedAnswer: any StringProtocol, inInvocation invocation: XCSourceEditorCommandInvocation) {
+        //Removes the markup code from the generated answer
+        let replacementText = generatedAnswer.replacingOccurrences(of: "```", with: "")
+        
+        for _ in (textBlock.startLine...textBlock.endLine) {
+            invocation.buffer.lines.removeObject(at: textBlock.startLine)
+        }
+        
+        var insertAt = textBlock.startLine
+        for generatedLine in generatedAnswer.split(separator: "\n") {
+            //Add each generated line at the position where the user selections started, and adds the original indentation in the first line of the user selection so that the generated answer starting at the same indentation level of the code in the user selection
+            let indentedLine = textBlock.indentation + generatedLine
+            invocation.buffer.lines.insert(indentedLine, at: insertAt)
+            insertAt += 1
+        }
     }
 }

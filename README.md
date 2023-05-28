@@ -22,9 +22,9 @@ By using this extension, you agree that any code you input will be sent to the O
 
 ## Available Commands
 
-### Comment selection
+### Code Documentation
 
-This command generates a comment for the selected portion of code and add it above that selection.
+This command generates the code documentation for the selected code.
 
 ### Generate Codable from JSON
 
