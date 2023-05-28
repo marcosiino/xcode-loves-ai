@@ -38,6 +38,11 @@ In the example below I add a comment above a function which make an api call and
 
 ![](https://github.com/marcosiino/xcode-loves-ai/blob/feature/readme_gif_examples/example_gifs/rewrite-using-async-await.gif)
 
+In the following example I ask to generate the code documentation for the selected class:
+
+![](https://github.com/marcosiino/xcode-loves-ai/blob/feature/readme_gif_examples/example_gifs/instruct2code-generating-documentation.gif
+)
+
 ## Contribute
 
 You are welcomed to contribute to XcodeLovesAI ChatGPT extension by creating new commands or improving the existing one. Adding new commands is very easy, just create a new command class inside the XCLovesAI_Extension/Commands group folder (see how the existing commands class are done for reference), then add a new dictionary entry in the XCLovesAI_Extension/Info.plist like the following one:
