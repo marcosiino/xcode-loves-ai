@@ -52,6 +52,27 @@ In the following example I ask to generate the code documentation for the select
 ![](/example_gifs/instruct2code-generating-documentation.gif
 )
 
+### SwiftUI Components Forge
+
+This cool command randomly generates a SwiftUI reusable component.
+
+![](/example_gifs/swiftui-components-forge-command.gif
+)
+
+**Instructions:**
+
+Launch it from an empty source file or write a simple comment to explain the AI what kind of component you want to generate. The content of the source file will be replaced by the generated SwiftUI component. 
+
+**Examples:**
+
+```swift
+// Generate a cool button
+```  
+
+```swift
+// Generate a weather card
+```  
+
 ## Contribute
 
 You are welcomed to contribute to XcodeLovesAI ChatGPT extension by creating new commands or improving the existing one. Adding new commands is very easy, just create a new command class inside the XCLovesAI_Extension/Commands group folder (see how the existing commands class are done for reference), then add a new dictionary entry in the XCLovesAI_Extension/Info.plist like the following one:
