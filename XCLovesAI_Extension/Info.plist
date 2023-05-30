@@ -32,14 +32,6 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>Instructions2Code</string>
 				</dict>
-				<dict>
-					<key>XCSourceEditorCommandClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SwiftUIComponentsForge</string>
-					<key>XCSourceEditorCommandIdentifier</key>
-					<string>$(PRODUCT_BUNDLE_IDENTIFIER).SwiftUIComponentsForge</string>
-					<key>XCSourceEditorCommandName</key>
-					<string>SwiftUI Components Forge</string>
-				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).SourceEditorExtension</string>
