@@ -29,6 +29,7 @@
 		A93CCD3A2A20198C0041C5D2 /* openai.apikey in Resources */ = {isa = PBXBuildFile; fileRef = A93CCD392A20198C0041C5D2 /* openai.apikey */; };
 		A93CCD3C2A201DDC0041C5D2 /* JSONToCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CCD3B2A201DDC0041C5D2 /* JSONToCodable.swift */; };
 		A93CCD3E2A2024990041C5D2 /* Instructions2Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CCD3D2A2024990041C5D2 /* Instructions2Code.swift */; };
+		A9877D9A2A268CCC001B6EBB /* SwiftUIComponentsForge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9877D992A268CCC001B6EBB /* SwiftUIComponentsForge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		A93CCD392A20198C0041C5D2 /* openai.apikey */ = {isa = PBXFileReference; lastKnownFileType = text; path = openai.apikey; sourceTree = "<group>"; };
 		A93CCD3B2A201DDC0041C5D2 /* JSONToCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONToCodable.swift; sourceTree = "<group>"; };
 		A93CCD3D2A2024990041C5D2 /* Instructions2Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions2Code.swift; sourceTree = "<group>"; };
+		A9877D992A268CCC001B6EBB /* SwiftUIComponentsForge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIComponentsForge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 				A91060362A1FEC1D0045B41F /* CodeDocumentation.swift */,
 				A93CCD3B2A201DDC0041C5D2 /* JSONToCodable.swift */,
 				A93CCD3D2A2024990041C5D2 /* Instructions2Code.swift */,
+				A9877D992A268CCC001B6EBB /* SwiftUIComponentsForge.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				A93CCD3C2A201DDC0041C5D2 /* JSONToCodable.swift in Sources */,
 				A93CCD342A200E150041C5D2 /* AIAssistedCommand.swift in Sources */,
 				A91060352A1FEC1D0045B41F /* SourceEditorExtension.swift in Sources */,
+				A9877D9A2A268CCC001B6EBB /* SwiftUIComponentsForge.swift in Sources */,
 				A91060572A1FF10B0045B41F /* MessageModel.swift in Sources */,
 				A93CCD372A20109C0041C5D2 /* CodeEditorCommand.swift in Sources */,
 				A910604D2A1FF0DA0045B41F /* Request.swift in Sources */,
