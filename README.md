@@ -1,4 +1,6 @@
-# XcodeLovesAI
+![Xcode Loves AI](/logo.png)
+
+# Xcode Loves AI
 
 An Xcode Source Editor Extension to integrate ChatGPT in Xcode and let the AI assist you within Xcode by generating comments, Codable models from JSON, generate code from instructions, etc...
 
@@ -54,7 +56,7 @@ In the following example I ask to generate the code documentation for the select
 
 ## Contribute
 
-You are welcomed to contribute to XcodeLovesAI ChatGPT extension by creating new commands or improving the existing one. Adding new commands is very easy, just create a new command class inside the XCLovesAI_Extension/Commands group folder (see how the existing commands class are done for reference), then add a new dictionary entry in the XCLovesAI_Extension/Info.plist like the following one:
+You are welcomed to contribute to Xcode Loves AI ChatGPT extension by creating new commands or improving the existing one. Adding new commands is very easy, just create a new command class inside the XCLovesAI_Extension/Commands group folder (see how the existing commands class are done for reference), then add a new dictionary entry in the XCLovesAI_Extension/Info.plist like the following one:
 
 ```
     <dict>
